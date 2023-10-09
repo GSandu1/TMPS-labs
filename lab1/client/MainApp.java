@@ -14,7 +14,7 @@ public class MainApp {
         MembershipFactory membershipFactory = new MembershipFactory();
         Membership premiumMembership = membershipFactory.createMembership("Premium", 10);
 
-        Customer john = new Customer("John Doe", "john@example.com", premiumMembership);
+        Customer john = new SpecialMember("John Doe", "john@example.com", premiumMembership);
 
         Bookstore bookstore = new Bookstore("MyLibrary");
         bookstore.addBook(recommendedBook);
